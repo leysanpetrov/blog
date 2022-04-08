@@ -1,0 +1,44 @@
+
+.container{
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 9px 22px 15px 22px;
+}
+
+.authentication .item {
+  padding-left: 20px;
+}
+
+.authentication {
+  display: flex;
+}
+
+.activeLink {
+
+}
+
+.item a {
+  font-size: 18px;
+  text-decoration:none;
+  color: black;
+}
+
+.containerForUser {
+  padding-left: 20px;
+  display: flex;
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  margin-left: 12px;
+  border-radius: 50%;
+}
+
+.userName {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.85);
+}

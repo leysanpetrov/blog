@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  background-color: #EBEEF3;
+
+}
+
+.articleList {
+  list-style-type: none;
+  padding-top: 26px;
+  padding-left: 0;
+}
+
+.article {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  //display: flex;
+}
+
+.containerArticle {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 26px;
+  width: 941px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  padding-top: 15px;
+  padding-left: 19px;
+  padding-right: 14px;
+
+}
