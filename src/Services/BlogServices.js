@@ -75,14 +75,20 @@ export default class BlogServices {
     return res.json()
   }
 
+  // headers: {
+  //   'Content-Type': 'application/json;charset=utf-8',
+  //   'Authorization': `Token ${token}`
+  // },
+
   postResourceArticle = async (path, data, token) => {
     const fullWay = `${this._apiBase}${path}`
 
     const res = await fetch(fullWay, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-        'Authorization': `Token ${token}`
+        Authorization: `Bearer ${token}`,
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(data)
     })
