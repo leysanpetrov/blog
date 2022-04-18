@@ -10,7 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a73f4f3-0853-438b-a0ac-9ed6e1e81f52" name="Default Changelist" comment="" />
+    <list default="true" id="6a73f4f3-0853-438b-a0ac-9ed6e1e81f52" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +78,17 @@
       <recent name="$PROJECT_DIR$/src/App" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -87,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.start" />
@@ -114,6 +129,7 @@
       <workItem from="1650279020343" duration="167000" />
       <workItem from="1650279193363" duration="56000" />
       <workItem from="1650279251855" duration="138000" />
+      <workItem from="1650279396550" duration="1953000" />
     </task>
     <task id="LOCAL-00001" summary="4.2.3 ошибка при создании статьи в postResourceArticle">
       <created>1649436002425</created>
@@ -157,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650279229192</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="exclude idea files from gitignore">
+      <created>1650279499954</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650279499954</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +205,8 @@
     <MESSAGE value="fix eslint" />
     <MESSAGE value="add idea files to gitignore" />
     <MESSAGE value="add files to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add files to gitignore" />
+    <MESSAGE value="exclude idea files from gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="exclude idea files from gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="501" y="304" key="#ESLint" timestamp="1650279369106">
@@ -269,6 +293,14 @@
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state width="1238" height="225" key="GridCell.Tab.3.right/0.23.1280.726@0.23.1280.726" timestamp="1647000175503" />
+    <state x="38" y="66" width="1224" height="602" key="MergeDialog" timestamp="1650279536816">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="38" y="66" width="1224" height="602" key="MergeDialog/0.23.1280.726@0.23.1280.726" timestamp="1650279536816" />
+    <state x="528" y="260" width="502" height="252" key="MultipleFileMergeDialog" timestamp="1650279536842">
+      <screen x="0" y="23" width="1280" height="726" />
+    </state>
+    <state x="528" y="260" width="502" height="252" key="MultipleFileMergeDialog/0.23.1280.726@0.23.1280.726" timestamp="1650279536842" />
     <state x="510" y="95" key="RollbackChangesDialog" timestamp="1650274646138">
       <screen x="0" y="23" width="1280" height="727" />
     </state>
@@ -277,10 +309,10 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="141" y="25" key="SettingsEditor/0.23.1280.727@0.23.1280.727" timestamp="1650277406741" />
-    <state x="240" y="113" key="Vcs.Push.Dialog.v2" timestamp="1650279230807">
+    <state x="240" y="113" key="Vcs.Push.Dialog.v2" timestamp="1650279565510">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
-    <state x="240" y="113" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1650279230807" />
+    <state x="240" y="113" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1650279565510" />
     <state x="240" y="113" key="Vcs.Push.Dialog.v2/0.23.1280.727@0.23.1280.727" timestamp="1650278674842" />
     <state x="240" y="113" key="Vcs.Push.Dialog.v2/0.23.1280.728@0.23.1280.728" timestamp="1650272938953" />
     <state x="340" y="143" width="600" height="486" key="find.popup" timestamp="1650276391794">

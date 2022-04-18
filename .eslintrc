@@ -35,7 +35,8 @@
     "react-hooks/exhaustive-deps": "warn",
     "arrow-body-style": "off",
     "no-underscore-dangle": "off",
-    "default-param-last": "off"
+    "default-param-last": "off",
+    "no-shadow": "off"
   },
   "settings": {
     "react": {

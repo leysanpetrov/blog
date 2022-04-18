@@ -9,7 +9,7 @@ import Article from '../Article/Article'
 import Spinner from '../Spinner/Spinner'
 import ErrorIndicator from '../ErrorIndicator/ErrorIndicator'
 
-export const BlogList = ({
+const BlogList = ({
   loading, error, BlogServices, articles, page, articlesCount,
   pageSize, fetchArticles, changePage
 }) => {
