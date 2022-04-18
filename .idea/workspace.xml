@@ -12,8 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6a73f4f3-0853-438b-a0ac-9ed6e1e81f52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +128,7 @@
       <workItem from="1650279020343" duration="167000" />
       <workItem from="1650279193363" duration="56000" />
       <workItem from="1650279251855" duration="138000" />
-      <workItem from="1650279396550" duration="1953000" />
+      <workItem from="1650279396550" duration="2851000" />
     </task>
     <task id="LOCAL-00001" summary="4.2.3 ошибка при создании статьи в postResourceArticle">
       <created>1649436002425</created>
@@ -180,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650279499954</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix build problems">
+      <created>1650285489834</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650285489834</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +212,8 @@
     <MESSAGE value="add idea files to gitignore" />
     <MESSAGE value="add files to gitignore" />
     <MESSAGE value="exclude idea files from gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="exclude idea files from gitignore" />
+    <MESSAGE value="fix build problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix build problems" />
   </component>
   <component name="WindowStateProjectService">
     <state x="501" y="304" key="#ESLint" timestamp="1650279369106">
@@ -225,26 +232,30 @@
       <screen x="0" y="23" width="1280" height="726" />
     </state>
     <state x="378" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.726@0.23.1280.726" timestamp="1647965256090" />
-    <state width="1238" height="225" key="GridCell.Tab.0.bottom" timestamp="1647000175501">
-      <screen x="0" y="23" width="1280" height="726" />
+    <state width="1238" height="449" key="GridCell.Tab.0.bottom" timestamp="1650285392920">
+      <screen x="0" y="23" width="1280" height="728" />
     </state>
     <state width="1238" height="225" key="GridCell.Tab.0.bottom/0.23.1280.726@0.23.1280.726" timestamp="1647000175501" />
     <state width="1238" height="449" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1646825772065" />
-    <state width="1238" height="225" key="GridCell.Tab.0.center" timestamp="1647000175500">
-      <screen x="0" y="23" width="1280" height="726" />
+    <state width="1238" height="449" key="GridCell.Tab.0.bottom/0.23.1280.728@0.23.1280.728" timestamp="1650285392920" />
+    <state width="1238" height="449" key="GridCell.Tab.0.center" timestamp="1650285392919">
+      <screen x="0" y="23" width="1280" height="728" />
     </state>
     <state width="1238" height="225" key="GridCell.Tab.0.center/0.23.1280.726@0.23.1280.726" timestamp="1647000175500" />
     <state width="1238" height="449" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1646825772064" />
-    <state width="1238" height="225" key="GridCell.Tab.0.left" timestamp="1647000175499">
-      <screen x="0" y="23" width="1280" height="726" />
+    <state width="1238" height="449" key="GridCell.Tab.0.center/0.23.1280.728@0.23.1280.728" timestamp="1650285392919" />
+    <state width="1238" height="449" key="GridCell.Tab.0.left" timestamp="1650285392919">
+      <screen x="0" y="23" width="1280" height="728" />
     </state>
     <state width="1238" height="225" key="GridCell.Tab.0.left/0.23.1280.726@0.23.1280.726" timestamp="1647000175499" />
     <state width="1238" height="449" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1646825772063" />
-    <state width="1238" height="225" key="GridCell.Tab.0.right" timestamp="1647000175500">
-      <screen x="0" y="23" width="1280" height="726" />
+    <state width="1238" height="449" key="GridCell.Tab.0.left/0.23.1280.728@0.23.1280.728" timestamp="1650285392919" />
+    <state width="1238" height="449" key="GridCell.Tab.0.right" timestamp="1650285392920">
+      <screen x="0" y="23" width="1280" height="728" />
     </state>
     <state width="1238" height="225" key="GridCell.Tab.0.right/0.23.1280.726@0.23.1280.726" timestamp="1647000175500" />
     <state width="1238" height="449" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1646825772064" />
+    <state width="1238" height="449" key="GridCell.Tab.0.right/0.23.1280.728@0.23.1280.728" timestamp="1650285392920" />
     <state width="1238" height="225" key="GridCell.Tab.1.bottom" timestamp="1647000175501">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
@@ -309,12 +320,12 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="141" y="25" key="SettingsEditor/0.23.1280.727@0.23.1280.727" timestamp="1650277406741" />
-    <state x="240" y="113" key="Vcs.Push.Dialog.v2" timestamp="1650279565510">
-      <screen x="0" y="23" width="1280" height="726" />
+    <state x="240" y="113" key="Vcs.Push.Dialog.v2" timestamp="1650285491661">
+      <screen x="0" y="23" width="1280" height="728" />
     </state>
     <state x="240" y="113" key="Vcs.Push.Dialog.v2/0.23.1280.726@0.23.1280.726" timestamp="1650279565510" />
     <state x="240" y="113" key="Vcs.Push.Dialog.v2/0.23.1280.727@0.23.1280.727" timestamp="1650278674842" />
-    <state x="240" y="113" key="Vcs.Push.Dialog.v2/0.23.1280.728@0.23.1280.728" timestamp="1650272938953" />
+    <state x="240" y="113" key="Vcs.Push.Dialog.v2/0.23.1280.728@0.23.1280.728" timestamp="1650285491661" />
     <state x="340" y="143" width="600" height="486" key="find.popup" timestamp="1650276391794">
       <screen x="0" y="23" width="1280" height="727" />
     </state>

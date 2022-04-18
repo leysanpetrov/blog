@@ -1,3 +1,3 @@
 # link on Vercel
 
-[link to blog on Vercel](https://vercel.com/leysan707-gmailcom/blog/settings)
+[link to blog on Vercel](https://blog-leysan707-gmailcom.vercel.app )
