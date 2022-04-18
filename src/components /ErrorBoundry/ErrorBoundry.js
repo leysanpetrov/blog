@@ -13,6 +13,7 @@ export default class extends Component {
       hasError: true
     })
   }
+
   render() {
     if (this.state.hasError) {
       return <ErrorIndicator />

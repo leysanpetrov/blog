@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import classes from './Page.module.scss'
 import SingIn from '../SingIn/SingIn'
 

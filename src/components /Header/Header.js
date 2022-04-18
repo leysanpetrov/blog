@@ -1,13 +1,10 @@
 import React from "react"
 import { NavLink } from 'react-router-dom'
+import { connect } from 'react-redux'
 import classes from "./Header.module.scss"
 import compose from '../../utils/compose'
 import withBlogServices from '../hoc/withBlogServices'
-import { connect } from 'react-redux'
 import {onLogOut} from "../../actions/actions"
-import { changePage, fetchArticles } from '../../actions/actions'
-import { BlogList } from '../BlogList/BlogList'
-
 
 const Header = ({ userName, userAvatar, onLogOut }) => {
 

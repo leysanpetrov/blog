@@ -1,9 +1,9 @@
 import React, { useRef } from 'react'
 import { useForm } from 'react-hook-form'
-import classes from './SingUpForm.module.scss'
 import { useNavigate } from 'react-router-dom'
-import { onSubmitSingUp } from '../../actions/actions'
 import { connect } from 'react-redux'
+import classes from './SingUpForm.module.scss'
+import { onSubmitSingUp } from '../../actions/actions'
 import compose from '../../utils/compose'
 import withBlogServices from '../hoc/withBlogServices'
 
@@ -26,13 +26,6 @@ const SingUpForm = ({ BlogServices, onSubmitSingUp }) => {
   const onSubmit = (data) => {
     reset()
     onSubmitSingUp(BlogServices, data, navigateToHomePage)
-    // blogServices.postResource('/users', {
-    //   user: {
-    //     username: data.UserName,
-    //     email: data.Email,
-    //     password: data.Password
-    //   }
-    // }).then((res) => console.log(res))
   }
 
   return (

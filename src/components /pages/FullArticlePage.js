@@ -1,10 +1,10 @@
 import React from "react"
-import FullArticle from '../FullArticle/FullArticle'
 import { useParams } from 'react-router-dom';
+import FullArticle from '../FullArticle/FullArticle'
 
 
 const FullArticlePage = () => {
-  let params = useParams();
+  const params = useParams();
   return (
     <FullArticle
       slug={ params.slug }

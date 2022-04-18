@@ -1,5 +1,5 @@
-import classes from './CreateArticle.module.scss'
 import React from 'react'
+import classes from './CreateArticle.module.scss'
 import CreateArticleForm from '../CreateArticleForm/CreateArticleForm'
 
 const CreateArticle = () => {

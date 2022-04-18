@@ -1,5 +1,5 @@
-import classes from './EditProfile.module.scss'
 import React from 'react'
+import classes from './EditProfile.module.scss'
 import EditProfileForm from '../EditProfileForm/EditProfileForm'
 
 const EditProfile = () => {

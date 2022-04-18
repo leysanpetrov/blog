@@ -6,7 +6,7 @@ const articleFactory = (article) => ({
   tagList: article.tagList,
   title: article.title,
   body: article.body,
-  description: article.description
-})
+  description: article.description,
+});
 
-export default articleFactory
+export default articleFactory;
