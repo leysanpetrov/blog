@@ -1,13 +1,17 @@
 import React, { useRef } from 'react'
 import { useForm } from 'react-hook-form'
+import { connect } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import classes from './EditProfileForm.module.scss'
 import { onSubmitEditProfile } from '../../actions/actions'
-import { connect } from 'react-redux'
 import compose from '../../utils/compose'
 import withBlogServices from '../hoc/withBlogServices'
 
 
 const EditProfileForm = ({ BlogServices, onSubmitEditProfile, userName, email, token, bio }) => {
+
+  const navigate = useNavigate()
+  const navigateToHomePage = () => navigate(-1)
 
   const {
     register,
@@ -22,7 +26,7 @@ const EditProfileForm = ({ BlogServices, onSubmitEditProfile, userName, email, t
 
   const onSubmit = (data) => {
     reset()
-    onSubmitEditProfile(BlogServices, data, token, bio)
+    onSubmitEditProfile(BlogServices, data, token, bio, navigateToHomePage)
   }
 
   return (
@@ -87,7 +91,7 @@ const EditProfileForm = ({ BlogServices, onSubmitEditProfile, userName, email, t
           {errors?.image && <p>{errors?.image?.message || 'Поле обязательно к заполнению'}</p>}
         </div>
       </div>
-      <div className={classes.formItem + " " + classes.submitEditProfile}>
+      <div className={`${classes.formItem  } ${  classes.submitEditProfile}`}>
         <input className={classes.submit} type="submit" value="Create"/>
       </div>
     </form>

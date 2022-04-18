@@ -1,7 +1,6 @@
 import React from 'react'
 import classes from './CreateTagList.module.scss'
 import CreateTag from '../CreateTag/CreateTag'
-import { v4 as uuidv4 } from 'uuid';
 
 const CreateTagList = ({ tags, register, onDelete }) => {
 

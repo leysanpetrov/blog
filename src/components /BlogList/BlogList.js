@@ -1,15 +1,13 @@
 import React, { useEffect } from 'react'
-import classes from './BlogList.module.scss'
-import BlogServices from '../../Services/BlogServices'
 import { connect } from 'react-redux'
+import { Pagination } from 'antd'
+import classes from './BlogList.module.scss'
 import { fetchArticles, changePage } from '../../actions/actions'
 import compose from '../../utils/compose'
 import withBlogServices from '../hoc/withBlogServices'
 import Article from '../Article/Article'
-import { Pagination } from 'antd'
 import Spinner from '../Spinner/Spinner'
 import ErrorIndicator from '../ErrorIndicator/ErrorIndicator'
-import { Link } from 'react-router-dom'
 
 export const BlogList = ({
   loading, error, BlogServices, articles, page, articlesCount,

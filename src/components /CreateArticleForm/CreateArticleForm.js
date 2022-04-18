@@ -1,14 +1,14 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { connect } from 'react-redux'
+import { v4 as uuidv4 } from 'uuid'
 import classes from './CreateArticleForm.module.scss'
 import BlogServices from '../../Services/BlogServices'
 import { onSubmitCreateArticle } from '../../actions/actions'
-import { connect } from 'react-redux'
 import compose from '../../utils/compose'
 import withBlogServices from '../hoc/withBlogServices'
-import { BlogList } from '../BlogList/BlogList'
+
 import CreateTagList from '../CreateTagList/CreateTagList'
-import { v4 as uuidv4 } from 'uuid'
 
 const blogServices = new BlogServices()
 
@@ -92,7 +92,7 @@ const CreateArticleForm = ({ token, BlogServices, onSubmitCreateArticle }) => {
       <div className={classes.formItem}>
         <label>
           Text
-          <textarea className={errors?.Text ? classes.inputError + ' ' + classes.text : classes.text}
+          <textarea className={errors?.Text ? `${classes.inputError  } ${  classes.text}` : classes.text}
                     {...register('Text', {
                       required: true,
                     })}

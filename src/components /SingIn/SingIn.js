@@ -1,6 +1,6 @@
-import classes from './SingIn.module.scss'
 import { NavLink } from 'react-router-dom'
 import React from 'react'
+import classes from './SingIn.module.scss'
 import SingInForm from '../SingInForm/SingInForm'
 
 const SingIn = () => {

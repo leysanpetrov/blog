@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const {
   Provider: BlogServicesProvider,
-  Consumer: BlogServicesConsumer
-} = React.createContext()
+  Consumer: BlogServicesConsumer,
+} = React.createContext();
 
 export {
   BlogServicesProvider,
-  BlogServicesConsumer
-}
+  BlogServicesConsumer,
+};

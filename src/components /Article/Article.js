@@ -1,9 +1,8 @@
 import React from 'react'
-import './Article.module.scss'
-import classes from './Article.module.scss'
-import TagList from '../TagList/TagList'
 import { Remarkable } from 'remarkable';
 import { Link } from "react-router-dom"
+import classes from './Article.module.scss'
+import TagList from '../TagList/TagList'
 
 const Article = ({title, tagList, description, avatar, createdAt, userName, slug }) => {
 
@@ -47,7 +46,7 @@ const Article = ({title, tagList, description, avatar, createdAt, userName, slug
           <Link to={`/${slug}`} > {title} </Link>
         </div>
         <TagList tagList={ tagList } />
-        {/*<div className={classes.body}> { cutText(body, 600)} </div>*/}
+        {/* <div className={classes.body}> { cutText(body, 600)} </div> */}
         <div className={classes.body}
             dangerouslySetInnerHTML={getRawMarkup(description)}
          />
@@ -62,7 +61,7 @@ const Article = ({title, tagList, description, avatar, createdAt, userName, slug
              className={classes.avatar}
              src={avatar}/>
       </div>
-    {/*// </div>*/}
+    {/* // </div> */}
 </React.Fragment>
   )
 }
