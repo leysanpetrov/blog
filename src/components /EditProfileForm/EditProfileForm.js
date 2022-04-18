@@ -5,9 +5,13 @@ import { onSubmitEditProfile } from '../../actions/actions'
 import { connect } from 'react-redux'
 import compose from '../../utils/compose'
 import withBlogServices from '../hoc/withBlogServices'
+import { useNavigate } from 'react-router-dom'
 
 
 const EditProfileForm = ({ BlogServices, onSubmitEditProfile, userName, email, token, bio }) => {
+
+  const navigate = useNavigate()
+  const navigateToHomePage = () => navigate(-1)
 
   const {
     register,
@@ -22,7 +26,7 @@ const EditProfileForm = ({ BlogServices, onSubmitEditProfile, userName, email, t
 
   const onSubmit = (data) => {
     reset()
-    onSubmitEditProfile(BlogServices, data, token, bio)
+    onSubmitEditProfile(BlogServices, data, token, bio, navigateToHomePage)
   }
 
   return (

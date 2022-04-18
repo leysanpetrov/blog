@@ -89,7 +89,7 @@ const fetchArticles = (BlogServices, pageSize, page) => async (dispatch) => {
   }
 }
 
-const onSubmitSingUp = (BlogServices, data) => (dispatch) => {
+const onSubmitSingUp = (BlogServices, data, navigateToHomePage) => (dispatch) => {
   BlogServices.postResource('/users', {
     user: {
       username: data.UserName,
@@ -98,11 +98,13 @@ const onSubmitSingUp = (BlogServices, data) => (dispatch) => {
     }
   }).then((user) => {
     dispatch(singUp(user))
+    navigateToHomePage()
+    saveToLocalStorage(data)
   })
 }
 
 
-const onSubmitEditProfile = (BlogServices, data, token, bio) => (dispatch) => {
+const onSubmitEditProfile = (BlogServices, data, token, bio, navigateToHomePage) => (dispatch) => {
   BlogServices.putResource('/user', {
     user: {
       email: data.Email,
@@ -113,20 +115,20 @@ const onSubmitEditProfile = (BlogServices, data, token, bio) => (dispatch) => {
       image: data.image,
     }
   }).then((data) => {
-
     dispatch(editProfile(data))
-    makeLogIn(data)
+    navigateToHomePage()
+    saveToLocalStorage(data)
   })
 }
 
-const makeLogIn = (data) => {
+const saveToLocalStorage = (data) => {
   localStorage.setItem("email", JSON.stringify(data.user.email));
   localStorage.setItem("token", JSON.stringify(data.user.token));
   localStorage.setItem("userAvatar", JSON.stringify(data.user.image));
   localStorage.setItem("userName", JSON.stringify(data.user.username));
 };
 
-const onSubmitSingIn = (BlogServices, data) => (dispatch) => {
+const onSubmitSingIn = (BlogServices, data, navigateToHomePage) => (dispatch) => {
   BlogServices.postResource('/users/login', {
     user: {
       email: data.Email,
@@ -134,7 +136,8 @@ const onSubmitSingIn = (BlogServices, data) => (dispatch) => {
     }
   }).then((data) => {
       dispatch(singIn(data))
-      makeLogIn(data)
+    navigateToHomePage()
+    saveToLocalStorage(data)
     }
   )
 }
